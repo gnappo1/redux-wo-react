@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="container">
+        <span id="budget"></span>
+      </div>
+      <div id="container">
+        <form id="form">
+          <span id="quantity-selector">
+            <input type="number" id="quantity" step="1" min="0"/>
+          </span>
+          <span id="action">
+            <select id="action-dropdown">
+              <option value="">Please choose one</option>
+              <option value="add">Add</option>
+              <option value="subtract">Subtract</option>
+              <option value="power">Power</option>
+            </select>
+          </span>
+          <input type="submit" value="Go!"/>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
